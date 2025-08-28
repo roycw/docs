@@ -56,6 +56,8 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "styles": ["styles.css"],
+
   "navbar": {
     "links": [
       {

@@ -1,0 +1,5 @@
+/* Increase Mintlify logo size */
+.mintlify-nav .logo img {
+  height: 40px !important;  /* change number until it feels right */
+  width: auto !important;
+}
