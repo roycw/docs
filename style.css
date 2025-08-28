@@ -1,6 +1,6 @@
 /* Make Mintlify navbar logo bigger */
 .nav-logo {
-  height: 80px !important;   /* adjust until it looks right */
+  height: 110px !important;   /* adjust until it looks right */
   width: auto !important;
 }
 
