@@ -7,6 +7,26 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
+  "callouts": {
+      "note": {
+        "background": "rgba(247, 37, 133, 0.1)", 
+        "border": "#f72585",
+        "iconColor": "#f72585",
+        "title": "Note"
+      },
+      "tip": {
+        "background": "rgba(58, 12, 163, 0.1)",
+        "border": "#7209b7",
+        "iconColor": "#7209b7",
+        "title": "Tip"
+      },
+      "important": {
+        "background": "rgba(58, 12, 163, 0.1)",
+        "border": "#3a0ca3",
+        "iconColor": "#3a0ca3",
+        "title": "Important"
+      }
+    },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
