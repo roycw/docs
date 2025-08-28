@@ -1,0 +1,18 @@
+/* Make the navbar logo bigger */
+#navbar [data-selector="nav-logo"] img,
+#navbar [data-selector="nav-logo"] svg,
+#navbar .nav-logo img,
+#navbar .nav-logo svg {
+  height: 44px !important;  /* tweak size */
+  width: auto !important;
+}
+
+/* Optional: smaller on mobile */
+@media (max-width: 640px) {
+  #navbar [data-selector="nav-logo"] img,
+  #navbar [data-selector="nav-logo"] svg,
+  #navbar .nav-logo img,
+  #navbar .nav-logo svg {
+    height: 32px !important;
+  }
+}
