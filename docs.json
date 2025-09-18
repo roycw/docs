@@ -47,7 +47,8 @@
           {
             "group": "Guides",
             "pages": [
-              "AI-chat-modes"
+              "AI-chat-modes",
+              "visualEdits"
             ]
           }
         ]
