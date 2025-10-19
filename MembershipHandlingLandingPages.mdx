@@ -1,0 +1,75 @@
+---
+title: "Membership Handling & Landing Pages"
+description: "Learn how to add user authentication, gated content, and a landing experience to your Niles-generated apps."
+---
+
+## Overview
+
+Niles makes it easy to turn any generated app into a membership-based product — complete with a public landing page for visitors and a private members-only area for registered users.
+
+You can use this flow for:
+
+* SaaS dashboards
+
+* Subscription-based tools
+
+* Communities with member access
+
+* Paid content or course platforms
+
+This guide shows how to implement membership logic and design the user landing flow inside your Niles app using built-in tools, authentication providers, and conditional routing.
+
+## Sign Ups and Login
+
+All apps created in Niles automatically include membership functionality.
+That means you already have:
+
+Secure Sign-up, Login, and Logout flows
+
+Session handling and private user areas
+
+Ready-to-use components that show content only to logged-in users
+
+You don’t need to request or code any of that — Niles includes it in every generated app.
+
+## How to Add Membership in Your Prompt
+
+If you’d like to control and view your users — such as approving members, assigning tiers, or managing plans — you can ask Niles to create an Admin Membership Section.
+
+This feature is not created by default, but can be fully generated via prompt.
+
+<Note>
+Example Prompts:
+
+“Add an admin dashboard where I can see all registered users.”
+</Note>
+
+
+Niles will automatically generate:
+
+* an Admin page (accessible only to you or admin roles)
+
+* a User table with columns like Name, Email, Status, Tier, Joined Date
+
+* optional controls (approve, deactivate, change plan)
+
+* protected routes so regular users can’t access it
+
+## Adding a Public Landing Page
+
+By default, Niles apps are members-only — users must sign up before seeing the app.
+If you want to make part of your app public, you’ll need to ask for it in your prompt.
+
+<Note>
+Example Prompt:
+
+“Add a public landing page with a hero section, pricing, and a call-to-action to sign up.”
+</Note>
+
+Once you include that in your prompt, Niles will:
+
+* Generate a public landing page accessible without login
+
+* Automatically link it to your existing signup flow
+
+* Keep it visually consistent with your app’s theme
