@@ -1,0 +1,102 @@
+---
+title: "Integrations"
+description: "Connect your Niles apps with built-in core features and third-party services."
+order: "6"
+---
+
+> Extend your Niles apps with built-in functionality and external services — all activated through your prompt.
+
+## Overview
+
+Every Niles app includes powerful integration capabilities that let you connect services, automate workflows, and expand functionality — all through natural language.
+
+There are two types of integrations:
+
+- **Core Integrations** – built into every app by default
+- **3rd-Party Integrations** – external tools that Niles can automatically configure for you
+
+Just mention what you want in your **app prompt**, and Niles will handle the setup for you.
+
+## Core Integrations
+
+Core integrations are included automatically with every app.\
+They cover the most essential features — from authentication and analytics to uploads and AI.
+
+| Integration       | Description                                                                              | How to Use                                                                                                  |
+| ----------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Email**         | Built-in functionality for sending notifications, newsletters, and transactional emails. | Email is already enabled. Configure your provider in **Settings → Email** or use the default Niles service. |
+| **Upload Files**  | Native file upload and management with automatic optimization and CDN delivery.          | File uploads work out of the box. Add file fields in your forms and Niles handles the rest.                 |
+| **LLM**           | Integrated Large Language Model (AI) features for intelligent automation.                | Simply mention AI features in your prompt. Example: “Add an AI assistant that summarizes text.”             |
+| **Analytics**     | Built-in analytics for tracking usage and app performance.                               | No setup required. Analytics are automatically active and viewable in your **Project Dashboard**.           |
+| **Security**      | Enterprise-grade protections such as 2FA and rate limiting.                              | Enabled by default. Configure 2FA and rate limits in **Settings → Security**.                               |
+| **Custom Domain** | Connect your own domain for a branded experience.                                        | Point your domain’s DNS to Niles servers. SSL certificates are auto-provisioned.                            |
+
+<Tip>
+   Core integrations are _always on_ — no prompt or configuration is needed to use them. 
+</Tip>
+
+## 3rd-Party Integrations
+
+Third-party integrations let you connect external systems like Stripe, Supabase, or OpenAI directly to your app.
+
+Just mention the integration by name in your prompt — Niles will automatically configure it.
+
+| Integration                 | Category      | Description                                                                     | How to Use                                                                                  |
+| --------------------------- | ------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Resend**                  | Email         | Send transactional and marketing emails using Resend’s reliable infrastructure. | Mention “Resend” in your prompt. Example: “Use Resend for all app emails.”                  |
+| **Stripe**                  | Payment       | Accept payments and manage subscriptions using Stripe.                          | Mention “Stripe” in your prompt. Example: “Add Stripe subscriptions for premium users.”     |
+| **PayPal**                  | Payment       | Integrate PayPal for a trusted and familiar checkout experience.                | Mention “PayPal” in your prompt. Example: “Add PayPal checkout to my app.”                  |
+| **Supabase**                | Database      | Open-source Firebase alternative with real-time database and authentication.    | Mention “Supabase” in your prompt. Example: “Use Supabase for user data and login.”         |
+| **OpenAI**                  | AI            | Integrate GPT-powered intelligence and automation.                              | Mention “OpenAI” in your prompt. Example: “Add an OpenAI chatbot to assist users.”          |
+| **Cloudinary**              | Media         | Manage and optimize images or videos with AI-powered transformations.           | Mention “Cloudinary” in your prompt. Example: “Use Cloudinary to optimize uploaded images.” |
+| **Discord** _(Coming Soon)_ | Communication | Engage your community and send app notifications to Discord channels.           | Coming soon — will support sending updates and managing members.                            |
+
+<Note> 3rd-party integrations are automatically detected and configured from your prompt — no manual setup needed. </Note>
+
+## Example Prompts
+
+You can enable integrations just by describing them in your app idea:
+
+> “Create a subscription-based app using Stripe for billing, Supabase for data, and Cloudinary for image storage.”
+
+> “Build a dashboard that uses OpenAI for smart suggestions and Resend for newsletters.”
+
+> “Add PayPal checkout and connect a custom domain.”
+
+Niles automatically:
+
+- Adds the right configuration and SDKs
+- Sets up authentication and routes
+- Creates environment variables securely
+- Lists everything inside your **Integrations panel**
+
+## How It Works
+
+When you mention an integration, Niles:
+
+1. **Detects it in your prompt**
+2. **Adds configuration and environment variables**
+3. **Generates the required setup code**
+4. **Links it to your app’s workflow**
+
+Example:
+
+- Mentioning “Stripe” adds payment pages and webhook handlers
+- Mentioning “Supabase” connects authentication and storage
+- Mentioning “OpenAI” creates functions that call GPT APIs
+
+<Tip> You can see all connected services inside your project’s **Integrations tab**. </Tip>
+
+## Managing Integrations
+
+After your app is generated, open the **Integrations tab** inside your Niles project dashboard to:
+
+- View all active integrations
+- Add or remove services
+- Configure API keys and webhooks
+- Access setup guides and usage examples
+
+<Warning> Your credentials are encrypted and stored securely.\
+Niles never exposes private API keys in client-side code. </Warning>
+
+---
