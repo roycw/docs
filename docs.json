@@ -50,7 +50,8 @@
               "AI-chat-modes",
               "visualEdits",
               "codeMode",
-              "wizard"
+              "wizard",
+              "freezingFiles"
   
             ]
           },

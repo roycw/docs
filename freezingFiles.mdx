@@ -1,0 +1,70 @@
+---
+title: "File Freezing"
+description: "Learn how to protect specific files from AI modification in your Niles app."
+order: "7"
+---
+
+# File Freezing
+
+> Lock critical files to prevent the AI from overwriting them during new generations.
+
+## Overview
+
+The **File Freezing** feature in Niles lets you protect specific files from being modified by the AI when running new prompts or app updates.\
+This is useful when you’ve manually edited certain files or finalized layouts that you don’t want the AI to regenerate.
+
+Frozen files remain **visible to the AI** (so it still understands their content and structure), but the AI will **not modify or delete them**.
+
+## How It Works
+
+When you freeze a file:
+
+- The file becomes **read-only** to the AI.
+- The AI can still reference its contents to maintain context.
+- Any new AI-generated code will **avoid overwriting** or **rebuilding** that file.
+- You can unfreeze the file anytime if you want the AI to edit it again.
+
+<Note> Freezing files doesn’t remove them from your project — it only locks them against modification by the AI builder. </Note>
+
+##  Using File Freezing
+
+1. Open your project in Niles.
+2. Navigate to **Custom Instructions & File Locking** from the project menu.
+
+   ![Screenshot 2025-10-24 at 12.23.29.png](/images/Screenshot2025-10-24at12.23.29.png)
+3. You’ll see a list of all files under **Lock Files**.
+
+   ![Screenshot 2025-10-24 at 12.26.09.png](/images/Screenshot2025-10-24at12.26.09.png)
+4. Toggle individual files to lock or unlock them.
+5. Click **Freeze All** to protect everything in your project.
+6. Click **Unfreeze All** to re-enable editing for all files.
+
+After saving, the AI will respect your locked files in every new generation.
+
+---
+
+## Example Use Cases
+
+| Scenario              | Why to Freeze                                                                          |
+| --------------------- | -------------------------------------------------------------------------------------- |
+| **Custom Layouts**    | You’ve manually styled your layout or navigation and don’t want Niles to overwrite it. |
+| **Critical Logic**    | You implemented a complex function that should not be replaced by generated code.      |
+| **Stable Components** | Certain UI components are finalized and no longer need AI edits.                       |
+| **Versioned Routes**  | You’re maintaining multiple route versions and only want the AI to edit specific ones. |
+
+## Unfreezing Files
+
+If you later decide the AI should update a frozen file:
+
+1. Go back to **Custom Instructions & File Locking**.
+2. Toggle the file back to **Unlocked**.
+3. Save your settings.
+
+The AI will then include that file in its next generation cycle.
+
+<Tip> You can quickly toggle all files at once using the **Unfreeze All** button. </Tip>
+
+## Combining with Custom Instructions
+
+The **Custom Instructions** field in the same panel lets you add persistent guidance for the AI.\
+These instructions
