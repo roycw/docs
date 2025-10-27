@@ -59,7 +59,8 @@
             "group": "Your App",
             "pages": [
               "MembershipHandlingLandingPages",
-              "integrations"
+              "integrations",
+              "backendFunctions"
             ]
           }
         ]

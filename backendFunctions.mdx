@@ -1,0 +1,50 @@
+---
+title: "Backend Functions"
+description: "Learn how to create and manage backend functions in your Niles app for server-side logic and API routes."
+---
+
+# Backend Functions
+
+> Add secure server-side logic to your Niles app directly through natural language prompts.
+
+## Overview
+
+Backend Functions in Niles allow you to implement custom server-side logic without managing any infrastructure.\
+They are deployed automatically and can handle tasks like data processing, API calls, authentication, and automation.
+
+Each Niles app supports backend functions out of the box. You can create them directly from your **prompt** or add them later in the editor.
+
+## What Are Backend Functions
+
+Backend functions are isolated API endpoints that run securely on Niles servers.\
+They enable your app to:
+
+- Process data and handle CRUD operations
+- Interact with external APIs or databases
+- Manage webhooks or scheduled events
+- Execute logic that should not run on the client side
+
+Each function has access to your project’s integrations, environment variables, and authentication context.
+
+## How to Create a Backend Function
+
+You can generate backend functions by simply describing them in your prompt.
+
+**Example Prompts**
+
+- “Add a backend function that saves form submissions to the database.”
+- “Create an API endpoint that fetches user data from Supabase.”
+- “Add a webhook handler that runs when a Stripe payment succeeds.”
+
+When you include a request like this, Niles automatically:
+
+1. Creates a new backend file under `/functions`
+2. Defines the endpoint (for example, `/api/submitForm`)
+3. Connects it to any referenced integrations
+4. Deploys and hosts it automatically
+
+<Note>
+
+All backend functions live inside your project’s `/functions` directory.
+
+</Note>
