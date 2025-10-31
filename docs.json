@@ -56,7 +56,7 @@
             ]
           },
           {
-            "group": "API",
+            "group": "SDK",
             "pages": [
               "overview",
               "authentication",
