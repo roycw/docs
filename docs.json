@@ -56,6 +56,15 @@
             ]
           },
           {
+            "group": "API",
+            "pages": [
+              "overview",
+              "authentication",
+              "storage",
+              "llm"
+            ]
+          },
+          {
             "group": "Your App",
             "pages": [
               "MembershipHandlingLandingPages",
